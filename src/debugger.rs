@@ -64,8 +64,8 @@ const SCOPES: [&str; 3] = [TEST_SCOPE, AUTO_SCOPE, RUNTIME_SCOPE];
 const DEBUGGER_INSTALL_PATH: &str = "debugger";
 
 // Personal build of the (archived) zed-industries/java-debug fork with jdt:// source
-// materialization: https://github.com/sisyphusend/java-debug/releases/tag/0.53.2-patched
-const JAVA_DEBUG_PLUGIN_FORK_URL: &str = "https://github.com/sisyphusend/java-debug/releases/download/0.53.2-patched/com.microsoft.java.debug.plugin-0.53.2.jar";
+// materialization: https://github.com/sisyphusend/java-debug-server/releases/tag/0.53.2-patched
+const JAVA_DEBUG_PLUGIN_FORK_URL: &str = "https://github.com/sisyphusend/java-debug-server/releases/download/0.53.2-patched/com.microsoft.java.debug.plugin-0.53.2.jar";
 
 const MAVEN_METADATA_URL: &str = "https://repo1.maven.org/maven2/com/microsoft/java/com.microsoft.java.debug.plugin/maven-metadata.xml";
 

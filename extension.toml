@@ -6,7 +6,7 @@ authors = [
     "Java Extension Contributors",
 ]
 description = "Java support."
-repository = "https://github.com/zed-extensions/java"
+repository = "https://github.com/sisyphusend/zed-extension-java"
 
 [grammars.java]
 repository = "https://github.com/tree-sitter/tree-sitter-java"
