@@ -289,7 +289,12 @@ impl Debugger {
 
         let workspace_folder = worktree.root_path();
 
-        let (main_class, project_name) = {
+        // When the launch config pins both mainClass and projectName, skip the main-class
+        // resolution entirely: the LSP query fails while jdt.ls is still importing the project,
+        // which used to make the first launch attempts flaky.
+        let (main_class, project_name) = if config.main_class.is_some() && config.project_name.is_some() {
+            (config.main_class.clone(), config.project_name.clone())
+        } else {
             let arguments = [config.main_class.clone(), config.project_name.clone()]
                 .iter()
                 .flatten()
